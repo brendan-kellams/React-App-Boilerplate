@@ -1,0 +1,106 @@
+
+
+.project-card {
+    border: 1px solid black;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    max-width: 30rem;
+    max-height: 40rem;
+    position: relative;
+    transition: background .3s ease;
+
+    .project-card__description {
+        align-items: center;
+        color: $off-white;
+        display: flex;
+        flex-direction: column;
+        font-family: $font-description;
+        font-size: $font-size-small;
+        height: 100%;
+        justify-content: center;
+        position: absolute;
+        width: 100%;
+        opacity: 0;
+        text-align: center;
+        transition: opacity 0.3s;
+    }
+
+    &:hover {
+        .project-card {
+            box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+        }
+
+        .project-card__title {
+            opacity: .1;
+        }
+
+        .project-card__image {
+            opacity: .1;
+        }
+
+        .project-card__description {
+            opacity: 1;
+            z-index: 1;
+        }
+    }
+}
+
+.project-card__image {
+    width: 100%;
+    height: auto;
+    opacity: 1;
+    transition: opacity .3s;
+}
+
+.project-card__title {
+    align-items: center;
+    background: lightgrey;
+    border-bottom: 1px solid black;
+    display: flex;
+    font-family: $font-title;
+    justify-content: center;
+    width: 100%;
+    opacity: 1;
+    transition: opacity 0.3s;
+}
+
+.project-card__links {
+    display: flex;
+    justify-content: space-between;
+
+    h3 {
+        margin: 5px;
+
+        & > a {
+            position: relative;
+            color: $off-white;
+            text-decoration: none;
+
+            &:hover {
+                &:before {
+                    visibility: visible;
+                    -webkit-transform: scaleX(1);
+                    transform: scaleX(1);
+                }
+            }
+
+            &:before {
+                content: "";
+                position: absolute;
+                width: 100%;
+                height: 2px;
+                bottom: 0;
+                left: 0;
+                background-color: $off-white;
+                visibility: hidden;
+                -webkit-transform: scaleX(0);
+                transform: scaleX(0);
+                -webkit-transition: all .3s ease-in-out 0s;
+                transition: all .3s ease-in-out 0s;
+            }
+        }
+    }
+}

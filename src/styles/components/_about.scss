@@ -1,0 +1,37 @@
+.about__bio {
+    grid-column-start: 4;
+    grid-column-end: 11;
+    grid-row-start: 1;
+    grid-row-end: 5;
+    text-align: center;
+    font-size: 4.8rem;
+    font-weight: 700;
+    font-family: 'Amatic SC', cursive;
+}
+
+.about__image {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 4;
+
+    img {
+        border-radius: 20px;
+    }
+}
+
+.slide {
+    animation: slide 800ms ease-in-out forwards;
+}
+
+@keyframes slide {
+    from {
+        transform: translateX(-50%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0%);
+        opacity: 1;
+    }
+}
