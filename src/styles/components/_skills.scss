@@ -1,0 +1,198 @@
+.skills__softSkills-container {
+    display: flex;
+    flex-direction: row;
+    grid-column-start: 3;
+    grid-column-end: 11;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    background-color: $off-white;
+}
+
+.soft-skill-element {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 25%;
+
+    h2, h3 {
+        text-align: center;
+        margin: 0;
+    }
+}
+
+.hexagon {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    width: 200px;
+    height: 115.47px;
+    background-color: $blue;
+    margin: 57.74px 0;
+
+    img {
+        left: 0;
+        top: 0;
+    }
+
+    &:before {
+        bottom: 100%;
+        border-bottom: 57.74px solid $blue;
+    }
+
+    &:after {
+        top: 100%;
+        width: 0;
+        border-top: 57.74px solid $blue;
+    }
+}
+
+.hexagon:before,
+.hexagon:after {
+    content: "";
+    position: absolute;
+    width: 0;
+    border-left: 100px solid transparent;
+    border-right: 100px solid transparent;
+}
+
+.skills__percentages-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    grid-column-start: 4;
+    grid-column-end: 7;
+    grid-row-start: 5;
+    grid-row-end: 11;
+}
+
+.skills__photo {
+    grid-column-start: 8;
+    grid-column-end: 10;
+    grid-row-start: 5;
+    grid-row-end: 8;
+}
+
+.skill__container {
+    display: flex;
+    height: 45px;
+    flex-direction: row;
+    width: 100%;
+}
+
+.skill__name {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100px;
+    font-weight: bold;
+    color: $off-white;
+    background: $blue;
+}
+
+.skill__bar {
+    width: 100%;
+    text-align: right;
+    border-radius: 0 5px 5px 0;
+    background: darken($off-white, 2%);
+    color: white;
+}
+
+.html {
+    border-radius: 0 5px 5px 0;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    height: 100%;
+    width: 90%;
+    background: $dark-blue;
+}
+
+.css {
+    border-radius: 0 5px 5px 0;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    height: 100%;
+    width: 80%;
+    background: $dark-blue;
+}
+
+.bootstrap {
+    border-radius: 0 5px 5px 0;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    height: 100%;
+    width: 70%;
+    background: $dark-blue;
+}
+
+.javascript {
+    border-radius: 0 5px 5px 0;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    height: 100%;
+    width: 75%;
+    background: $dark-blue;
+}
+
+.react {
+    border-radius: 0 5px 5px 0;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    height: 100%;
+    width: 65%;
+    background: $dark-blue;
+}
+
+.angular {
+    border-radius: 0 5px 5px 0;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    height: 100%;
+    width: 30%;
+    background: $dark-blue;
+}
+
+.node {
+    border-radius: 0 5px 5px 0;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    height: 100%;
+    width: 60%;
+    background: $dark-blue;
+}
+
+.mysql {
+    border-radius: 0 5px 5px 0;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    height: 100%;
+    width: 40%;
+    background: $dark-blue;
+}
+
+.express {
+    border-radius: 0 5px 5px 0;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    height: 100%;
+    width: 45%;
+    background: $dark-blue;
+}
+
+.git {
+    border-radius: 0 5px 5px 0;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    height: 100%;
+    width: 80%;
+    background: $dark-blue;
+}

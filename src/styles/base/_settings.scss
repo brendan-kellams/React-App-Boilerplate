@@ -6,8 +6,11 @@ $dark-blue: #1a5ba4;
 $off-white: #f7f7ff;
 
 //Font Size
-$font-size-large: 1.8rem;
-$font-size-small: 1.4rem;
+$base-font-size: 1em;
+
+//Line Height
+$base-line-height: 1.5;
+$header-line-height: 1.25;
 
 //Fonts
 $font-title: "Lobster", cursive;
@@ -19,3 +22,24 @@ $m-size: 1.6rem;
 $l-size: 3.2rem;
 $xl-size: 4.8rem;
 $desktop-breakpoint: 45rem;
+
+//Breakpoints
+$bp-mobileS: 20em; //320px
+$bp-mobileM: 23.4375em; //375px
+$bp-mobileL: 26.5625em; //425px
+$bp-tablet: 48em; // 768px
+$bp-laptopS: 64em; // 1024px
+$bp-laptopM: 76.5em; // 1224px
+$bp-laptopL: 90em; // 1440px
+$bp-4K: 160em; // 2560px
+
+// Media Queries
+$mq-mobileS: "(min-width: #{$bp-mobileS})";
+$mq-mobileM: "(min-width: #{$bp-mobileM})";
+$mq-mobileL: "(min-width: #{$bp-mobileL})";
+$mq-tablet: "(min-width: #{$bp-tablet})";
+$mq-laptopS: "(min-width: #{$bp-laptopS})";
+$mq-laptopM: "(min-width: #{$bp-laptopM})";
+$mq-laptopL: "(min-width: #{$bp-laptopL})";
+$mq-4K: "(min-width: #{$bp-4K})";
+$mq-retina: "(-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi)";

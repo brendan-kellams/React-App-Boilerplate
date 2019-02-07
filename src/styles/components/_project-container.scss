@@ -1,6 +1,6 @@
 .project-container {
     background: linear-gradient(172deg, #34ADFF 35%, #4CBFFF 35%);
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    flex-direction: row;
+    justify-content: space-evenly;
 }

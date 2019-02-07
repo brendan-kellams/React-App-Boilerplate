@@ -1,5 +1,11 @@
 .grid-container {
     display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: repeat(6, 1fr);
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
+}
+
+@media #{$mq-tablet} {
+    .grid-container {
+        grid-template-columns: 1fr 1.5fr;
+    }
 }
