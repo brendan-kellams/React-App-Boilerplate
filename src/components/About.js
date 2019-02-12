@@ -2,22 +2,23 @@ import React from 'react';
 import Waypoint from 'react-waypoint';
 
 const styles = {
-  transition: 'all 700ms ease-in-out'
+  transition: 'all 800ms ease-in-out'
 };
 class About extends React.Component {
   constructor() {
     super();
     this.state = {
       opacity: 0,
-      slide: false,
+      slide: false
     };
   }
 
   onEnter() {
     this.setState({
       opacity: 1,
-      slide: true,
+      slide: true
     });
+    console.log('yo');
   }
 
   onLeave() {

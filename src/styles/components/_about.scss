@@ -23,11 +23,11 @@
         border-radius: 20px;
         object-fit: cover;
     }
+    .slide {
+        animation: slide 800ms ease-in-out;
+    }
 }
 
-.slide {
-    animation: slide 800ms ease-in-out;
-}
 
 @keyframes slide {
     from {

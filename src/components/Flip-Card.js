@@ -8,13 +8,13 @@ const FlipCard = () => (
           <img src="/images/brendan_thumbnail.jpg" />
         </div>
         <div className="flip-card-back">
-          <h1>Contact Info:</h1>
-          <h2>
+          <h2>Connect with Me!</h2>
+          <h3>
             <a href="https://github.com/brendan-kellams" target="__blank">Github</a>
-          </h2>
-          <h2>
+          </h3>
+          <h3>
             <a href="https://www.linkedin.com/in/brendan-kellams/" target="__blank">LinkedIn</a>
-          </h2>
+          </h3>
         </div>
       </div>
     </div>
