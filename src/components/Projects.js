@@ -2,12 +2,11 @@ import React from 'react';
 import Card from './Card';
 
 const Projects = () => (
-  <div>
-    <div className="project-container">
-      <Card
+  <div className="project-container">
+    <Card
         title="PT-Link"
         description="An education-communication application that allows parents and teachers
-        to stay connected regarding what content is being taught in class and so much more."
+        to stay connected regarding class content."
         projectImage="/images/PT-Link-new.jpg"
         code="https://github.com/brendan-kellams/PTLink"
         live="http://pt-link.herokuapp.com/" />
@@ -23,8 +22,6 @@ const Projects = () => (
         projectImage="/images/expensify.jpg"
         code="https://github.com/brendan-kellams/React-Expensify"
         live="https://reactjsexpensifyapp.herokuapp.com" />
-    </div>
-    <div className="project-container">
       <Card
         title="Indecision"
         description="When you have several things to do but you are lost on which one to do first,
@@ -43,8 +40,7 @@ const Projects = () => (
         description="Create a burger and log that burger into a queue waiting to be DEVOURED!"
         projectImage="/images/burger.gif"
         code="https://github.com/brendan-kellams/Burger"
-        live="http://yumburger.herokuapp.com/" />
-    </div>
+      live="http://yumburger.herokuapp.com/" />
   </div>
 );
 

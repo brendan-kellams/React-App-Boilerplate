@@ -5,8 +5,9 @@ const Card = (props) => (
     <div className="project-card__title">
       <p>{props.title}</p>
     </div>
+    <img src={props.projectImage} />
     <div className="project-card__description">
-      <h2>{props.description}</h2>
+      <h3>{props.description}</h3>
       <div className="project-card__links">
         <h3>
           <a href={props.code} target="_blank">Code</a>
@@ -16,7 +17,6 @@ const Card = (props) => (
         </h3>
       </div>
     </div>
-    <img className="project-card__image" src={props.projectImage} />
   </div>
 );
 

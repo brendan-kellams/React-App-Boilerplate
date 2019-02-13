@@ -15,14 +15,10 @@ const Main = () => (
         <About />
       </div>
     </div>
-    <div className="section-container">
-      <div className="content-container">
-        <Skills />
-      </div>
+    <div className="content-container">
+      <Skills />
     </div>
-    {/*<div className="section-container">
-<Projects />
-</div>  */}
+    <Projects />
   </div>
 
 );

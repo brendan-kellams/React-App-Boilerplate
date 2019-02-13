@@ -1,30 +1,13 @@
 .project-card {
-    border: 1px solid black;
-    border-radius: 5px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     display: flex;
     flex-direction: column;
-    margin: 10px;
-    max-width: 90rem;
-    max-height: 100rem;
+    justify-content: center;
+    align-content: center;
     position: relative;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    margin: 10px;
     transition: background .3s ease;
-
-    .project-card__description {
-        align-items: center;
-        color: $off-white;
-        display: flex;
-        flex-direction: column;
-        font-family: $font-description;
-        font-size: $base-font-size;
-        height: 100%;
-        justify-content: center;
-        position: absolute;
-        width: 100%;
-        opacity: 0;
-        text-align: center;
-        transition: opacity 0.3s;
-    }
 
     &:hover {
         .project-card {
@@ -35,7 +18,7 @@
             opacity: .1;
         }
 
-        .project-card__image {
+        img {
             opacity: .1;
         }
 
@@ -44,62 +27,92 @@
             z-index: 1;
         }
     }
-}
 
-.project-card__image {
-    width: 100%;
-    height: auto;
-    opacity: 1;
-    transition: opacity .3s;
-}
+    img {
+        border: 1px black solid;
+        border-top: none;
+        width: 100%;
+        opacity: 1;
+        transition: opacity .3s;
+    }
 
-.project-card__title {
-    align-items: center;
-    background: lightgrey;
-    border-bottom: 1px solid black;
-    display: flex;
-    font-family: $font-title;
-    font-size: 4.6rem;
-    justify-content: center;
-    width: 100%;
-    opacity: 1;
-    transition: opacity 0.3s;
-}
+    .project-card__title {
+        background: lightgrey;
+        border: 1px solid black;
+        border-bottom: none;
+        font-family: $font-title;
+        font-size: 1.6rem;
+        width: 100%;
+        opacity: 1;
+        transition: opacity 0.3s;
 
-.project-card__links {
-    display: flex;
-    justify-content: space-between;
+        p {
+            text-align: center;
+        }
+    }
 
-    h3 {
-        margin: 5px;
+    .project-card__description {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+        color: $off-white;
+        font-family: $font-description;
+        font-size: $base-font-size;
+        opacity: 0;
+        position: absolute;
+        text-align: center;
+        transition: opacity 0.3s;
+        margin: 0;
 
-        & > a {
-            position: relative;
-            color: $off-white;
-            text-decoration: none;
+        .project-card__links {
+            display: flex;
+            justify-content: center;
 
-            &:hover {
-                &:before {
-                    visibility: visible;
-                    -webkit-transform: scaleX(1);
-                    transform: scaleX(1);
+            h3 {
+                margin: 5px;
+
+                & > a {
+                    position: relative;
+                    color: $off-white;
+                    text-decoration: none;
+
+                    &:hover {
+                        &:before {
+                            visibility: visible;
+                            -webkit-transform: scaleX(1);
+                            transform: scaleX(1);
+                        }
+                    }
+
+                    &:before {
+                        content: "";
+                        position: absolute;
+                        width: 100%;
+                        height: 2px;
+                        bottom: 0;
+                        left: 0;
+                        background-color: $off-white;
+                        visibility: hidden;
+                        -webkit-transform: scaleX(0);
+                        transform: scaleX(0);
+                        -webkit-transition: all .3s ease-in-out 0s;
+                        transition: all .3s ease-in-out 0s;
+                    }
                 }
             }
-
-            &:before {
-                content: "";
-                position: absolute;
-                width: 100%;
-                height: 2px;
-                bottom: 0;
-                left: 0;
-                background-color: $off-white;
-                visibility: hidden;
-                -webkit-transform: scaleX(0);
-                transform: scaleX(0);
-                -webkit-transition: all .3s ease-in-out 0s;
-                transition: all .3s ease-in-out 0s;
-            }
         }
+    }
+}
+
+@media #{$mq-mobileL} {
+    .project-card {
+        width: 45%;
+    }
+}
+
+@media #{$mq-laptopS} {
+    .project-card {
+        width: 25%;
     }
 }
