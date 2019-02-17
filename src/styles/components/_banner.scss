@@ -8,12 +8,12 @@
 
     .banner__background {
         background-image: url("/images/BK-Logo.png");
-        width: 100%;
-        height: 80%;
-        opacity: .6;
         background-size: contain;
         background-repeat: no-repeat;
         background-position: center;
+        width: 100%;
+        height: 80%;
+        opacity: .6;
 
         .banner__intro {
             color: $dark-blue;
