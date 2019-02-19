@@ -18,7 +18,6 @@ class About extends React.Component {
       opacity: 1,
       slide: true
     });
-    console.log('yo');
   }
 
   onLeave() {

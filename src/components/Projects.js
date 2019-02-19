@@ -15,7 +15,7 @@ const Projects = () => (
         description="A social application that allows users to create and invite others to events that you are hosting."
         projectImage="/images/whoopitup.jpg"
         code="https://github.com/brendan-kellams/Whoop-It-Up"
-        live="http://pt-link.herokuapp.com/" />
+        live="http://whoopitup.herokuapp.com/" />
       <Card
         title="Expensify in React"
         description="A social application that allows users to create and invite others to events that you are hosting."
@@ -26,7 +26,7 @@ const Projects = () => (
         title="Indecision"
         description="When you have several things to do but you are lost on which one to do first,
         let this app choose for you!"
-        projectImage="/images/whoopitup.jpg"
+        projectImage="/images/Indecision.jpg"
         code="https://github.com/brendan-kellams/Indecision-App"
         live="http://indecision-react-app.herokuapp.com/" />
       <Card
