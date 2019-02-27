@@ -103,34 +103,34 @@
     flex-direction: column;
     justify-content: space-between;
     width: 100%;
-}
 
-.skill__container {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    height: 45px;
-    width: 100%;
-}
+    .skill__container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        height: 45px;
+        width: 100%;
 
-.skill__name {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    width: 100px;
-    color: $off-white;
-    background: $blue;
-}
+        .skill__name {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            width: 100px;
+            color: $off-white;
+            background: $blue;
+        }
 
-@media #{$mq-laptopS} {
-    .skill__name {
-        width: 110px;
-    }
-}
+        @media #{$mq-laptopS} {
+            .skill__name {
+                width: 110px;
+            }
+        }
 
-@media #{$mq-laptopM} {
-    .skill__name {
-        width: 130px;
+        @media #{$mq-laptopM} {
+            .skill__name {
+                width: 130px;
+            }
+        }
     }
 }
 
@@ -140,25 +140,20 @@
     border-radius: 0 5px 5px 0;
     background: darken($off-white, 2%);
     color: white;
+
+    #html {
+        border-radius: 0 5px 5px 0;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        height: 100%;
+        width: 90%;
+        padding-right: 5px;
+        background: $dark-blue;
+    }
 }
 
-.skills__photo {
-    width: 100%;
-    height: auto;
-}
-
-.html {
-    border-radius: 0 5px 5px 0;
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    height: 100%;
-    width: 90%;
-    padding-right: 5px;
-    background: $dark-blue;
-}
-
-.css {
+#css {
     border-radius: 0 5px 5px 0;
     display: flex;
     align-items: center;
@@ -169,7 +164,7 @@
     background: $dark-blue;
 }
 
-.bootstrap {
+#bootstrap {
     border-radius: 0 5px 5px 0;
     display: flex;
     align-items: center;
@@ -180,7 +175,7 @@
     background: $dark-blue;
 }
 
-.javascript {
+#javascript {
     border-radius: 0 5px 5px 0;
     display: flex;
     align-items: center;
@@ -191,7 +186,7 @@
     background: $dark-blue;
 }
 
-.react {
+#react {
     border-radius: 0 5px 5px 0;
     display: flex;
     align-items: center;
@@ -202,7 +197,7 @@
     background: $dark-blue;
 }
 
-.angular {
+#angular {
     border-radius: 0 5px 5px 0;
     display: flex;
     align-items: center;
@@ -213,7 +208,7 @@
     background: $dark-blue;
 }
 
-.node {
+#node {
     border-radius: 0 5px 5px 0;
     display: flex;
     align-items: center;
@@ -224,7 +219,7 @@
     background: $dark-blue;
 }
 
-.mysql {
+#mysql {
     border-radius: 0 5px 5px 0;
     display: flex;
     align-items: center;
@@ -235,7 +230,7 @@
     background: $dark-blue;
 }
 
-.express {
+#express {
     border-radius: 0 5px 5px 0;
     display: flex;
     align-items: center;
@@ -246,7 +241,7 @@
     background: $dark-blue;
 }
 
-.git {
+#git {
     border-radius: 0 5px 5px 0;
     display: flex;
     align-items: center;
@@ -255,4 +250,9 @@
     width: 80%;
     padding-right: 5px;
     background: $dark-blue;
+}
+
+.skills__photo {
+    width: 100%;
+    height: auto;
 }

@@ -4,7 +4,7 @@ import SoftSkill from './Soft-Skill';
 import FlipCard from './Flip-Card';
 import ImageCard from './Image-Card';
 
-const Skills = (props) => (
+const Skills = () => (
   <div>
     <div className="skills__softSkills-container">
       <SoftSkill

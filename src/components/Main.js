@@ -10,10 +10,8 @@ const Main = () => (
     <div>
       <Banner />
     </div>
-    <div className="section-container">
-      <div className="content-container">
-        <About />
-      </div>
+    <div className="content-container">
+      <About />
     </div>
     <div className="content-container">
       <Skills />
