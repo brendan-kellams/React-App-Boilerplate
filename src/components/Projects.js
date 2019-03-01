@@ -18,7 +18,7 @@ const Projects = () => (
         live="http://whoopitup.herokuapp.com/" />
       <Card
         title="Expensify in React"
-        description="A social application that allows users to create and invite others to events that you are hosting."
+        description="A simple and smart application where you can add, delete, and edit your everyday expenses."
         projectImage="/images/expensify.jpg"
         code="https://github.com/brendan-kellams/React-Expensify"
         live="https://reactjsexpensifyapp.herokuapp.com" />
@@ -31,7 +31,7 @@ const Projects = () => (
         live="http://indecision-react-app.herokuapp.com/" />
       <Card
         title="Finnegan Blue"
-        description="A social application that allows users to create and invite others to events that you are hosting."
+        description="The website for the San Diegan folk band Finnegan Blue. If you are looking for some music to rock out to, look no further!"
         projectImage="/images/finneganblue.jpg"
         code="hhttps://github.com/brendan-kellams/FinneganBlue"
         live="http://finneganblue.herokuapp.com/" />
