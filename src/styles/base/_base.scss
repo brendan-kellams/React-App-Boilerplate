@@ -1,6 +1,9 @@
 body {
+    p {
+        font-family: 'Oswald', sans-serif;
+    }
+
     font-size: $base-font-size;
-    line-height: $base-line-height;
 
     @media #{$mq-laptopS} {
         font-size: $base-font-size * 1.2;

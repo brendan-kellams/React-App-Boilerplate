@@ -39,15 +39,16 @@ class About extends React.Component {
           </div>
         </Waypoint>
         <div className="about__bio">
+          <div style={{ marginBottom: '10px' }}>
+            <h3>The name is Brendan</h3>
+            <p>and</p>
+            <h3>Creating is my game!</h3>
+          </div>
+          <p>I love to build and design beautiful, clean websites for people and businesses.</p>
           <p>
-            As you probably already know, my name is Brendan and I'm a new web developer
-            looking to grow so I can build bigger and better websites for people and businesses.
-          </p>
-          <p>
-            In my free time when I am not trying to perfect my craft, I enjoy many different things
-            and it just depends on my mood. Sometimes, I enjoy playing guitar, enjoying video games,
-            or at peace with nature. But first and foremost, I always enjoy spending time with my family.
-          </p>
+            I enjoy many different things in life like music, video games, building computers
+            and being at peace with nature.</p>
+          <p> But first and foremost, I always enjoy spending time with my family.</p>
         </div>
       </div>
     )

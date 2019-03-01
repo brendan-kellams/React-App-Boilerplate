@@ -49,38 +49,54 @@
     }
 
     .flip-card-back {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
         background-color: $blue;
         color: white;
         transform: rotateY(180deg);
         z-index: 1;
 
-        h3 {
-            & > a {
-                position: relative;
-                color: $off-white;
-                text-decoration: none;
+        h2 {
+            font-family: 'Lobster', sans-serif;
+        }
 
-                &:hover {
-                    &:before {
-                        visibility: visible;
-                        -webkit-transform: scaleX(1);
-                        transform: scaleX(1);
+        .flip-card-back__links {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+
+            h3 {
+                margin: 10px;
+                font-family: 'Oswald', sans-serif;
+
+                & > a {
+                    position: relative;
+                    color: $off-white;
+                    text-decoration: none;
+
+                    &:hover {
+                        &:before {
+                            visibility: visible;
+                            -webkit-transform: scaleX(1);
+                            transform: scaleX(1);
+                        }
                     }
-                }
 
-                &:before {
-                    content: "";
-                    position: absolute;
-                    width: 100%;
-                    height: 2px;
-                    bottom: 0;
-                    left: 0;
-                    background-color: $off-white;
-                    visibility: hidden;
-                    -webkit-transform: scaleX(0);
-                    transform: scaleX(0);
-                    -webkit-transition: all .3s ease-in-out 0s;
-                    transition: all .3s ease-in-out 0s;
+                    &:before {
+                        content: "";
+                        position: absolute;
+                        width: 100%;
+                        height: 2px;
+                        bottom: 0;
+                        left: 0;
+                        background-color: $off-white;
+                        visibility: hidden;
+                        -webkit-transform: scaleX(0);
+                        transform: scaleX(0);
+                        -webkit-transition: all .3s ease-in-out 0s;
+                        transition: all .3s ease-in-out 0s;
+                    }
                 }
             }
         }
