@@ -33,7 +33,7 @@ const Projects = () => (
         title="Finnegan Blue"
         description="The website for the San Diegan folk band Finnegan Blue. If you are looking for some music to rock out to, look no further!"
         projectImage="/images/finneganblue.jpg"
-        code="hhttps://github.com/brendan-kellams/FinneganBlue"
+        code="https://github.com/brendan-kellams/FinneganBlue"
         live="http://finneganblue.herokuapp.com/" />
       <Card
         title="Burger"
