@@ -1,10 +1,10 @@
 import React from 'react'
 import { Router, Route, Switch } from 'react-router-dom';
-import createHistory from 'history/createBrowserHistory';
+import { createBrowserHistory } from 'history';
 import Main from '../components/Main';
 import NotFoundPage from '../components/NotFoundPage';
 
-export const history = createHistory();
+export const history = createBrowserHistory();
 
 
 const AppRouter = () => (
